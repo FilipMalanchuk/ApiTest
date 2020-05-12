@@ -27,7 +27,7 @@ dataOutput()
 // end of ccyr
 
 const WeatherOutput = async() => {
-	data = await getApi("http://api.openweathermap.org/data/2.5/weather?q=Kyiv&APPID=1e4c5456ddd367823b707047bd9635d2");
+	data = await getApi("https://api.openweathermap.org/data/2.5/weather?q=Kyiv&APPID=1e4c5456ddd367823b707047bd9635d2");
 	console.log(data)
 	let stringHtml = '<div class="weather-header">Погода в Киеве сейчас</div>'
 	stringHtml += "<div class='weather-row'>"
